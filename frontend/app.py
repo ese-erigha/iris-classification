@@ -6,7 +6,7 @@ from sklearn.datasets import load_iris
 
 @st.cache_resource
 def load_model():
-    model = joblib.load('model.joblib')
+    model = joblib.load('./model.joblib')
     return model
 
 
