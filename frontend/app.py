@@ -3,10 +3,10 @@ import streamlit as st
 import numpy as np
 from sklearn.datasets import load_iris
 
-
+model_path = "./frontend/model.joblib" # change to model.joblib for local development
 @st.cache_resource
 def load_model():
-    model = joblib.load('model.joblib')
+    model = joblib.load(model_path)
     return model
 
 
